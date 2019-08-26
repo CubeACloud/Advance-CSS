@@ -1,0 +1,108 @@
+/*The first two values specify the length of the shadow offset. The first value specifies the horizontal distance and the second specifies the vertical distance of the shadow. The third value specifies the blur radius and the last value describes the color of the shadow:
+
+1. value = The X-coordinate
+2. value = The Y-coordinate
+3. value = The blur radius
+4. value = The color of the shadow
+*/
+
+.h2{
+
+    text-shadow: 3px 2px; /* 3px is horizontal shadow and 2px is vertical*/
+}
+
+.color{
+
+text-shadow: 3px 2px yellow; /* add color property*/
+
+}
+
+.blur{
+    text-shadow: 3px 2px 6px yellow;   /* blur*/
+
+} 
+
+/*To add more than one shadow to the text, you can add a comma-separated list of shadows.*/
+ 
+.MultiShadow{
+
+    text-shadow: 0 0 3px yellow, 0 0 5px #0000FF;              /* syntax should be correct*/
+    /* text-shadow: 0 0 3px yellow, 0 0 5px #0000FF, 1px 1px 2px black;   you can add values */
+}
+
+
+
+.BorderRound{
+
+color: aqua;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -1px black; /*color must be same so it will look gentle*/
+
+}
+
+
+    /* BOX_SHADOW PROPERTY
+        The box-shadow property allows designers to easily implement multiple drop shadows (outer or inner) on 
+            box elements, specifying values for color, size, blur and offset
+                                                                                */
+
+
+.box{
+
+    width: 400px; /*define width*/
+    height: 250px; /*define height*/
+    padding: 17px; /* define padding*/
+    background-color: skyblue; /* define background color*/
+    box-shadow: 12px 10px rgb(89, 91, 192); /*12px horizontal 10px vertical shadow & shadow color*/
+
+}
+                /* BOX BLUR*/
+.boxBlur{
+
+    width: 400px; /*define width*/
+    height: 250px; /*define height*/
+    padding: 17px; /* define padding*/
+    background-color: skyblue; /* define background color*/
+    box-shadow: 12px 10px 7px rgb(89, 91, 192); /*12px horizontal 10px vertical shadow & 7px blur effect  & shadow color*/
+
+}
+
+
+
+
+/*using box shadow on image with ::after and ::before */
+
+.boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+    width: 50%;
+  }
+  
+  /* Make the image fit the box */
+  .boxshadow img {
+    width: 70%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+    align-items: center;
+  }
+  
+  .boxshadow::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 45px 21px rgba(0, 0, 0, 0.3);        
+    width: 70%; 
+    left: 5%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+  }
+
+
+
+
+
