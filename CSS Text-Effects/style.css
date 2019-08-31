@@ -1,0 +1,63 @@
+/*Text - Overflow*/
+
+p.para1 {
+    white-space: nowrap; 
+    width: 300px; 
+    border: 1.5px solid #000000; /*define broder*/
+    overflow: hidden;/*overflowed content that is not displayed/ 
+     /* overflow:visible overflowed content will be displayed */
+    text-overflow: clip;
+  }
+
+  p.para1:hover {
+
+    overflow: visible; /*if you hover over the text , overflow will be visible*/
+  }
+  
+  p.para2 {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1.5px solid #000000;/*define broder*/
+    overflow: hidden;
+    text-overflow: ellipsis; /*An ellipsis is a series of dots that usually indicates an intentional omission of a word,*/
+  }
+
+
+
+
+
+  /*overflow-wrap property*/
+
+  p.wrap {
+    width: 118px; 
+    border: 1px solid #FF0000;/*define broder*/
+    overflow-wrap: break-word; /*this property break a line of text inside the targeted element */ /*overflow-wrap is the standard name for its predecessor, */
+    /*word-wrap: break-word;   */  /* word-wrap was originally a proprietary Internet Explorer-only feature that was eventually supported in all browsers despite not being a standard.*/
+  }
+
+
+/*word-break property specifies line breaking rules*/
+
+  p.keep {
+    width: 140px; 
+    border: 1.5px solid #FF0000; 
+    word-break: keep-all;
+  }
+  
+  p.break {
+    width: 140px; 
+    border: 1.5px solid #FF0000;
+    word-break: break-all;
+  }
+
+
+  /*Writing Mode*/
+
+  p.hori {
+    writing-mode: horizontal-tb; 
+  }
+  
+  
+  p.vert {
+    writing-mode: vertical-rl; 
+  }
