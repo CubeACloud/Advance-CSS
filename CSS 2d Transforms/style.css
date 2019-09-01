@@ -1,0 +1,127 @@
+/*
+
+    YOU CAN USE THIS PROPERTIES WITH TRANSFORM METHOD (2D METHODS)
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+
+
+
+*/
+
+            /*TRANSFORM ROTATE METHOD*/
+
+/*The rotate() method rotates an element clockwise or counter-clockwise.*/
+
+
+  div.Deg { /*transform this specific div element to 30deg*/
+    margin: 90px;
+    width: 270px;
+    height: 140px;
+     background-color: rgb(255, 1, 10); /*define bg color*/
+    border: 3px dotted white; 
+    transform: rotate(30deg); /*USE (-) FOR COUNTER-WISE, FOR EXAMPLE -30*/
+  }
+
+
+
+            /* TRANSLATE METHOD*/
+
+/*The translate() method moves an element from its current position*/
+
+div.translate {
+    width: 270px;
+    height: 140px;
+     background-color: rgb(255, 1, 10); /*define bg color*/
+    border: 3px dotted white; /* define border*/
+    transform: translate(40px,90px); /*first property for x-axis(40px) &
+    second property for y-axis(90px)*/
+  }
+
+
+
+        /* SCALE METHOD*/
+
+  /*-method increases or decreases the size of an element*/
+
+
+  div.scale {
+    margin:230px;
+      width: 200px;
+      height: 100px;
+       background-color: rgb(255, 1, 10);
+      border: 3px dotted white;
+     
+      transform: scale(2,3); /*transform:scale(0.5,0.5) decrease it's orignal height and width*/
+    }
+
+/*you can also specify size of only y-axis or x-axis*/
+/*by using scaleX(2) for X-axis*/
+/*by using scaleY(2) for y-axis*/
+
+
+        /*SKEW*/
+
+        div.skew {
+            margin:90px;
+                   width: 150px;
+                   height: 50px;
+                       background-color: rgb(255, 1, 10);
+                         border: 3px dotted white;
+             transform: skew(20deg,10deg); /*first property use to access x-axis  & second property effects on y-axis*/
+           }
+
+/*  SKEW Y-AXIS*/
+
+div.skewY {
+    margin:90px;
+    width: 150px;
+    height: 50px;
+        background-color: rgb(255, 1, 10); /*DEFINE COLOR*/
+          border: 3px dotted white; /* DEFINE BORDER*/
+    
+      transform: skewY(30deg); 
+    }
+
+
+    /*SKEW X-AXIS*/
+
+    div.skewX {
+        margin:90px;
+        width: 150px;
+        height: 50px;
+            background-color: rgb(255, 1, 10);
+              border: 3px dotted white;
+        
+          transform: skewX(30deg);
+        }
+        
+
+
+        /*MATRIX METHOD*/
+
+/*MATRIX METHOD COMBINES ALL THE 2D TRANSFORM METHODS INTO ONE LINE */
+
+                /*SYNTAX*/
+
+/*The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+
+
+
+
+div.matrix {
+    margin:90px;
+            width: 150px;
+            height: 50px;
+                background-color: rgb(255, 1, 10);
+                  border: 3px dotted white;
+            
+      transform: matrix(1, 0, 0.5, 1, 150, 1); 
+    }
