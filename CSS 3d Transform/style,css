@@ -1,0 +1,77 @@
+             /*METHODS*/
+      
+
+       /*
+     rotateX()
+    rotateY()
+    rotateZ()
+       */
+       
+       /*ROTATEX() METHOD ROTATE AN ELEMENT AROUND IT'S X-AXIS */
+              
+          /*SYNTAX*/
+
+/* transform: rotateX(DEG)*/
+
+
+.rotatex {
+   
+    width: 200px;
+    height: 100px;
+     background-color: rgb(255, 1, 10);
+    border: 3px dotted white;
+   
+transform: rotateX(150deg); /*rotates an element around 150deg on X-axis*/
+margin-bottom: 25px;
+}
+
+
+
+
+
+ /*ROTATEX() METHOD ROTATE AN ELEMENT AROUND IT'S Y-AXIS */
+              
+          /*SYNTAX*/
+
+/* transform: rotateY(DEG)*/
+
+
+.rotatey {
+   
+  width: 200px;
+  height: 100px;
+   background-color: rgb(255, 1, 10);
+  border: 3px dotted white;
+ 
+transform: rotateX(150deg); /*rotates an element around 150deg on Y-axis*/
+margin-bottom: 120px;
+}
+
+
+
+
+
+.rotatez {
+   
+  width: 200px;
+  height: 100px;
+   background-color: rgb(255, 1, 10);
+  border: 3px dotted white;
+ 
+transform: rotateZ(90deg); /*rotates an element around 150deg on Z-axis*/
+}
+
+
+/*
+
+Property	                        Description
+transform            = 	Applies a 2D or 3D transformation to an element.
+transform-origin     = 	Allows you to change the position on transformed elements.
+transform-style	     =   Specifies how nested elements are rendered in 3D space.
+perspective	         =   Specifies the perspective on how 3D elements are viewed.
+perspective-origin	 =   Specifies the bottom position of 3D elements.
+backface-visibility	 =   Defines whether or not an element should be visible when not facing the screen.
+
+
+
+*/
