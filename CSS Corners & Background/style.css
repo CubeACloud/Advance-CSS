@@ -1,0 +1,113 @@
+/* rounded image*/
+
+.r1 {
+    border-radius: 25px; /*border-readius property give you access tou round corners   */ 
+    background: lightblue;  /* for background color  */ 
+    padding: 20px; /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders*/
+    width: 200px;  /*The width property sets the width of an element. */
+    height: 150px;  /*The height property in CSS defines specifies the content height */
+  }
+  
+  .r2 {
+    border-radius: 25px;
+    border: 2px solid lightblue;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  
+  .r3 {
+    border-radius: 25px;
+    background: url("roundB.gif"); /*The background-image CSS property sets one or more background images on an element.*/
+    background-position: left top; 
+    background-repeat: repeat;  
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+
+
+  /* Border Image*/
+
+
+
+  .border { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border1.jpg) 47 round;
+  }
+
+
+  .border1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border1.jpg) 47 stretch;
+  }
+
+
+
+
+  .border2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border1.jpg) 19% round;
+  }
+ 
+
+  /* Multi player background images*/
+
+  .div0 {
+    width: 400px;
+    height: 300px;
+    background-image: url("back1.jpg"), url("back2.jpg") ; /* multi layer background image */
+
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+} 
+
+
+
+
+/*background size property*/
+
+
+.div1 {
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background:url(back1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /*The contain keyword scales the background image to be as large as possible*/
+  }
+  
+  .div2 {
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background:url(back1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*The cover keyword scales the background image so that the content area is completely covered by the background image */
+  }
+  
+  .div3 {
+    border: 1px solid black;
+    height:120px;
+    width:150px;
+    background:url(back1.jpg);
+    background-repeat: no-repeat; /*background image will not be repeat*/
+  }
+
+
+
+
+
+  /*BACKGROUND IMAGE FULL COVER*/
+  
+.bg {
+
+    background: url(back1.jpg) no-repeat center fixed; 
+    background-size: cover;
+
+
+}
+  
