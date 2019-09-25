@@ -1,0 +1,60 @@
+                /*  TRANSITIONS*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #C80A32;
+  transition: width 2s;
+}
+
+/*THIS TRANSITION EXAMPLE CHANGE THE WIDTH OF DIV ELEMENT*/
+
+div.hov:hover {
+  background: red;
+  transition: width 2s;
+  width: 400px;
+
+}
+
+
+/*THIS EXAMPLE ADDS A TRANSITION PROPERTY EFFECT FOR BOTH WIDTH ADN HEIGHT*/
+div.hov1:hover{
+
+width: 252px;
+height: 252px;
+transition: width 2s, height 5s; /*width transtion takes 2 seconds and height transition takes 5s*/
+}
+
+                /*TRANSITION TIMING PROPERTY*/
+
+/*ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default).*/
+
+div.ease{transition-timing-function: ease;}
+
+/*linear - specifies a transition effect with the same speed from start to end.*/
+
+.linear {transition-timing-function: linear;}
+
+/*ease-in - specifies a transition effect with a slow start.*/
+
+.ease-in {transition-timing-function: ease-in;}
+
+/*ease-out - specifies a transition effect with a slow end.*/
+
+.ease-out {transition-timing-function: ease-out;}
+
+/*ease-in-out - specifies a transition effect with a slow start and end.*/
+
+.ease-in-out {transition-timing-function: ease-in-out;}
+
+div:hover{
+
+    width: 300px;
+}
+
+ 
+
+
+
+    
+
