@@ -1,0 +1,108 @@
+div{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px; /*height delcared*/
+    background-color: lightgreen; /*Background color apply to all div*/
+    position: relative; /*Position should be relative*/
+
+}
+
+
+    
+   
+
+    /*linear - Specifies an animation with the same speed from start to end.*/
+.linear {
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+    }
+
+    /*ease - Specifies an animation with a slow start, then fast, then end slowly (this is default).*/
+.ease{
+    animation: mymove 5s infinite;
+    animation-timing-function: ease;
+}
+
+    /*    ease-in - Specifies an animation with a slow start.*/
+.ease-in {
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in;
+}
+
+        /* ease-out - Specifies an animation with a slow end.*/
+.ease-out {
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-out;
+    }
+
+    /*    ease-in-out - Specifies an animation with a slow start and end.*/
+.ease-in-out {
+    animation: mymove 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+        /*@keyframes“, followed by an identifier giving a name for the animation*/
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+
+        /* The element will retain the style values that is set by the last keyframe */
+
+  .forward{
+
+    animation-name: fbb;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+/*The element will get the style values that is set by the first keyframe */
+
+  .backward{
+
+    animation-name: fbb;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+
+  }
+
+  /* The animation will follow the rules for both forwards and backwards
+  , extending the animation properties in both directions*/
+
+  .both{
+
+    animation-name: fbb;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+
+  }
+
+  @keyframes fbb {
+    from {top: 0px; background-color: rgb(124, 59, 230);}
+    to {top: 200px; background-color: rgb(121, 214, 97);}
+  }
+
+        /*Declaring all 6 animation properties*/
+
+.all{
+    animation-name: All;
+    animation-duration: 5s; /*duration*/
+    animation-timing-function: linear; /*animation type*/
+    animation-delay: 2s; /*animation delay*/
+    animation-iteration-count: infinite; /* animation iteration*/
+    animation-direction: alternate; /*animation direction*/
+}
+
+/*@keyframes“, followed by an identifier giving a name for the animation*/
+@keyframes All {
+
+    0%   {background-color:rgb(231, 127, 127); left:0px; top:0px;}
+    25%  {background-color:rgb(214, 214, 48); left:200px; top:0px;}
+    50%  {background-color:rgb(105, 219, 191); left:200px; top:200px;}
+    75%  {background-color:rgb(40, 175, 40); left:0px; top:200px;}
+    100% {background-color:rgb(204, 109, 109); left:0px; top:0px;}
+
+}
