@@ -1,0 +1,127 @@
+.flex-container {
+    display: flex; /*diplay:flex property makes container flexible*/
+    background-color: skyblue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+
+  /*flex direction property*/
+
+  .flex-containerD {
+    display: flex; /*diplay:flex property makes container flexible*/
+    background-color: skyblue;
+    flex-direction: column;
+    /*try also*/
+
+    /* flex-direction: row-reverse; */
+
+  }
+  
+  .flex-containerD > div {
+    background-color: #f1f1f1; 
+    width: 100px; /* define width*/
+    margin: 10px; /*define margin*/
+    padding: 20px; /* define padding*/
+    font-size: 30px; /* define font-size*/
+    line-height: 75px; /*define line height*/
+    text-align: center; /*define text align*/
+  }
+
+
+  /*The flex-wrap Property*/
+
+
+  .flex-containerW {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-containerW>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  /*no-wrap property*/
+
+
+  
+  .flex-containerN {
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    background-color: DodgerBlue;
+  }
+  
+  .flex-containerN>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+
+  /*flex justify*/
+
+  .flex-containerJ {
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+
+
+
+    
+    background-color: DodgerBlue;
+  }
+  
+  .flex-containerJ > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+  /*align items*/
+  .flex-containerI {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    /* align-items: flex-start;  The flex-start value aligns the flex items at the top of the container:*/
+
+    /* align-items: flex-end;     The flex-end value aligns the flex items at the bottom of the container:*/
+
+    /* align-items: stretch;      The stretch value stretches the flex items to fill the container (this is default):*/
+    /* align-items: baseline;      The baseline value aligns the flex items such as their baselines aligns: */
+
+    background-color: DodgerBlue;
+  }
+  
+  .flex-containerI > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    
+    line-height: 75px;
+    font-size: 30px;
+  }
