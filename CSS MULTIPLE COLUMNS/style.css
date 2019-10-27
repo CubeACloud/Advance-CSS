@@ -1,0 +1,56 @@
+/*column-count*/
+
+.count {
+
+  column-count: 3;
+}
+
+/*gap*/
+
+.gap{
+    column-count: 3;
+    column-gap: 40px;
+}
+
+/*rule*/
+.rule{
+
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid; /**column rule*/
+    column-rule-width: 1px; /*column-rule-width:*/
+
+    column-rule-color: lightblue;   /*column-rule-*/
+
+}   
+
+/*column rule*/
+/*The column-rule property is a shorthand property for setting all the column-rule-*/
+.column{
+
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue; /*column rule */
+}
+
+
+
+/*column width & span*/
+
+.span{
+
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue; /*column rule is a shorthand property for setting all the column-rule*/
+    column-width: 100px; /*The column-width property use to set optimal width for columns*/
+
+  }
+/*using column-span property you can specify how many columns an element should span across as per your need*/
+  .heading{
+    column-span: all;  
+
+  }
+  
+
+
+
