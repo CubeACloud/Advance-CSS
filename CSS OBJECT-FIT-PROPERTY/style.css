@@ -1,0 +1,10 @@
+/*    in css we use object fit property to resize the object
+*/
+
+
+
+  .fill {object-fit: fill;}/*This is default. The replaced content is sized to fill the element's content box. If necessary, the object will be stretched or squished to fit*/
+.contain {object-fit: contain;}/*- The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box*/
+.cover {object-fit: cover;}/*The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit*/
+.scale-down {object-fit: scale-down;}/*The content is sized as if none or contain were specified (would result in a smaller concrete object size)*/
+.none {object-fit: none;}/*The replaced content is not resized*/
