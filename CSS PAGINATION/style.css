@@ -1,0 +1,68 @@
+            /*PAGINATION*/
+
+/*THIS SYNTAX WILL BE APPLIED IN ALL PAGINATION*/
+            .pagination {
+                display: inline-block;
+              }
+              
+              .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+              }
+
+
+     /*ACTIVE PAGINATION*/      
+     
+     /* .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      } */
+
+      .pagination a.active {
+        background-color: #4CAF50; /*background-color*/
+        color: white; /*color*/
+        border-radius: 5px; /*radius*/
+
+      }
+ /*this graphic will be show with mouse over effect     */
+      .pagination a:hover:not(.active) {background-color: #ddd;
+        border-radius: 5px; /* border-radius*/
+    
+    }
+
+
+
+    /*Bordered Pagination*/
+
+    /* .center{
+        text-align: center;  for text align
+    }  */
+
+    .paginationB a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 4px; /*for spacing between boxes*/
+                font-size: 22px; /*for font size*/
+
+              }
+
+              .paginationB a.active {
+                background-color: #4CAF50;
+                color: white;
+                border: 1px solid #4CAF50;
+              }
+
+      .paginationB a:hover:not(.active) {background-color: #ddd;}
+
+
