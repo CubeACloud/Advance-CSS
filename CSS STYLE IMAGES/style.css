@@ -1,0 +1,55 @@
+/*applying border images*/
+
+.im1{
+    border-radius: 8px;
+}
+
+/*circle style image*/
+.im2{
+    border-radius: 50%;
+}
+
+
+/*image with borders*/
+.im3{
+
+    border: 3px solid rgba(83, 199, 145, 0.842);
+    border-radius: 15px;
+    padding: 5px;
+/*height: 100%;  for resonsive image*/   
+
+
+}
+/* hover effect*/
+.im3:hover{
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    
+}
+/*display block with responsive*/
+.im4 {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/*cards example  */
+
+  div.im5 {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+/*filters*/
+  .im6 {
+    opacity: 0.5;
+  filter: alpha(opacity=50);
+  }
