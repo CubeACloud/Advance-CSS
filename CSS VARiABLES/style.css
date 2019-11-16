@@ -1,0 +1,33 @@
+/*In css var() function is used to insert the value of a custom property.*/
+
+
+/*For a global scope you can use either the :root or the body selector*/
+
+                    /*SYNTAX*/
+                /*var(custom-name, value)
+*custon property name is required                
+*value is optional & it's just like a fallback value.             
+*/
+
+
+
+:root {
+    --main-bg-color: skyblue;  
+    --padding: 5px;
+  }
+  
+  :root {
+  --padding1 : 10px;
+  }
+  
+  .div1 {
+    background-color: var(--main-bg-color);
+    padding: var(--padding);  
+  }
+  
+  .div2 {
+    background-color: var(--main-bg-color);
+    padding: var(--padding1);
+  }
+  
+
